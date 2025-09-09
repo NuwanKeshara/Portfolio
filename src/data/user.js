@@ -16,21 +16,21 @@ const INFO = {
 	},
 
 	homepage: {
-		title: "Data Engineering Specialist",
+		title: "Data Engineering | Big Data | Cloud",
 		description:
-			"I am a backend developer with expertise in Node.js. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies. I enjoy solving complex problems and learning new skills. I am passionate about creating high-quality code that follows best practices and industry standards. I am always looking for new challenges and opportunities to grow as a developer.",
+			"Hi, I am Nuwan Keshara, a passionate Data Engineer with couple of years of experience designing and deploying scalable data pipelines, ETL processes and BI solutions. Highly skilled in Python, SQL and Spark with success of delivering automated reports, interactive dashboards and optimized data workflows. Capable of building end to end data engineering solutions that drive business intelligence and decision making.",
 	},
 
 	about: {
 		title: "Hi! I’m Nuwan Keshara. I love learning and building big data stuff.",
 		description:
-			"I've worked on a variety of projects over the years and I'm proud of the progress I've made. Many of these projects are open-source and available for others to explore and contribute to. If you're interested in any of the projects I've worked on, please feel free to check out the code and suggest any improvements or enhancements you might have in mind. Collaborating with others is a great way to learn and grow, and I'm always open to new ideas and feedback.",
+			"I've worked on a variety of projects over the years and I'm proud of the progress I've made. Many of these projects are open-source and available for others to explore and contribute to. If you're interested in any of the projects I've worked on, please feel free to check out the code and suggest any improvements or enhancements you might have in mind. Collaborating with others is a great way to learn and grow and I'm always open to new ideas and feedback.",
 	},
 
 	articles: {
-		title: "I'm passionate about pushing the boundaries of what's possible and inspiring the next generation of innovators.",
+		title: "Driven by curiosity and a love for data engineering, I explore data while inspiring others through knowledge sharing and continuous learning.",
 		description:
-			"Chronological collection of my long-form thoughts on programming, leadership, product design, and more.",
+			"A collection of my articles and blogs where I share insights, best practices, and lessons learned in data engineering, big data systems, and modern cloud platforms.",
 	},
 
 	projects: [

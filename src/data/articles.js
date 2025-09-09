@@ -2,12 +2,12 @@ import React from "react";
 
 function article_1() {
 	return {
-		date: "7 May 2023",
-		title: "The Benefits of Cloud Computing",
+		date: "1 September 2025",
+		title: "10 Advanced Spark Optimization Techniques",
 		description:
-			"Cloud computing offers a range of benefits, including cost savings and increased flexibility. Find out why more businesses are turning to the cloud.",
+			"Apache Spark is very powerful but running huge jobs efficiently requires more optimizing than the default settings. If you are only relying on default configurations, you could be faced with long execution times, high resource utilization and even job failures. In this post, I will go through 10 advanced level optimization techniques to squeeze optimal performance out of Spark.",
 		keywords: [
-			"The Benefits of Cloud Computing",
+			"Advanced Spark Optimization",
 		],
 		style: `
 				.article-content {
@@ -38,16 +38,13 @@ function article_1() {
 
 function article_2() {
 	return {
-		date: "7 May 2023",
-		title: "Artificial Intelligence in Healthcare",
+		date: "26 March 2025",
+		title: "IoT Real-time processing with Azure Databricks",
 		description:
-			"AI is transforming the healthcare industry, from improving patient outcomes to streamlining operations. Discover the latest applications of this game-changing technology.",
+			"This project focused on building a data pipeline to ingest and process IoT weather data, storing it in an Azure Databricks data Lakehouse using the Delta format and the Medallion Architecture. Finally, Power BI was used to visualize the data for analysis.",
 		style: ``,
 		keywords: [
-			"Artificial Intelligence in Healthcare",
-			"Tharindu",
-			"Tharindu N",
-			"Tharindu Nayanajith",
+			"IoT Real-time processing with Azure Databricks",
 		],
 		body: (
 			<React.Fragment>
@@ -66,9 +63,6 @@ function article_3() {
 		style: ``,
 		keywords: [
 			"Artificial Intelligence in Healthcare",
-			"Tharindu",
-			"Tharindu N",
-			"Tharindu Nayanajith",
 		],
 		body: (
 			<React.Fragment>
