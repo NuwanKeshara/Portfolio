@@ -2,18 +2,15 @@ const INFO = {
 	main: {
 		title: "Welcome",
 		name: "Nuwan Keshara",
-		email: "nuwankeshara12@gmail.com",
+		email: "nuwankyazh@gmail.com",
 		logo: "../logo.png",
 	},
 
-	socials: {
-		twitter: "https://twitter.com/",
-		github: "https://github.com/",
-		linkedin: "https://linkedin.com/",
-		instagram: "https://instagram.com/",
-		stackoverflow: "https://stackoverflow.com/",
-		facebook: "https://facebook.com/",
-	},
+		socials: {
+			github: "https://github.com/NuwanKeshara",
+			linkedin: "https://www.linkedin.com/in/nuwan-keshara/",
+			medium: "https://medium.com/@nuwankeshara12",
+		},
 
 	homepage: {
 		title: "Data Engineering | Big Data | Cloud",
@@ -35,48 +32,44 @@ const INFO = {
 
 	projects: [
 		{
-			title: "Project 1",
+			title: "IOT Real-time processing with Azure Databricks",
 			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
-			linkText: "View Project",
-			link: "https://github.com",
-		},
-
-		{
-			title: "Project 2",
-			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
+				"This project focuses on building a data pipeline to ingest and process IoT weather data and store the data in an Azure Databricks data lakehouse using Delta Lake and the Medallion Architecture. Finally Power BI will be used to visualize the data for analysis.",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
 			linkText: "View Project",
-			link: "https://github.com",
+			link: "https://github.com/NuwanKeshara/IOT-Real-time-processing-with-Azure-Databricks",
 		},
-
 		{
-			title: "Project 3",
+			title: "Snowflake Data Vault 2.0",
 			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/html/html.png",
+				"This project focused on redesign and implementation of scalable data warehouse solution utilizing the Data Vault 2.0 methodology within the Snowflake cloud data platform.",
+			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
 			linkText: "View Project",
-			link: "https://github.com",
+			link: "https://github.com/NuwanKeshara/Snowflake_Data_Vault_2.0",
 		},
-
 		{
-			title: "Project 4",
+			title: "Movie Ticket DataWarehouse",
 			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
+				"This project focuses on building a data warehouse and generating insightful reports from a dataset of customer movie theater bookings within the United States. Dataset is taken from Kaggle and it includes 2 CSV files. The objective is to build a datawarehouse from the ground up, enabling users to extract meaningful business intelligence through the comprehensive reports.",
+			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
 			linkText: "View Project",
-			link: "https://github.com",
+			link: "https://github.com/NuwanKeshara/MovieTicket-DataWarehouse",
 		},
-
 		{
-			title: "Project 5",
+			title: "SmartTemp: IOT Based Smart Temperature Predictor",
 			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
+				"IoT Based Temperature Prediction System: Designed and developed an IoT based system to monitor and predict ambient temperature, integrating sensors to collect real-time temperature data. Developed a motion based mechanism (gauge) to indicate temperature fluctuations to visualize current temperature readings. Time Series Forecasting: Utilized a time series algorithm to forecast temperature values for the next 30 days by leveraging historical seasonal temperature data to improve prediction accuracy.",
+			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
 			linkText: "View Project",
-			link: "https://github.com",
+			link: "https://github.com/NuwanKeshara",
+		},
+		{
+			title: "Bank Marketing Analysis and Loan Prediction System using Clustering and Classification",
+			description:
+				"Comprehensive Marketing Insight: Developed a web application for in-depth analysis of a bank's marketing campaigns. The system efficiently processes campaign results and provides valuable insights into customer engagement. Risk Assessment: Designed a loan prediction system using classification techniques. This innovative approach assesses the risk associated with granting loans to customers, aiding decision-making and minimizing financial risk. Web Interface: Created a user-friendly web interface that facilitates seamless interaction with the system. Stakeholders can easily input customer data and receive real-time loan risk predictions, improving operational efficiency and accessibility. Advanced Data Techniques: Utilized clustering algorithms to group customers based on their attributes, enhancing segmentation accuracy. Applied classification algorithms to these clusters, generating accurate loan risk predictions and supporting the bank's risk management strategies.",
+			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
+			linkText: "View Project",
+			link: "https://github.com/NuwanKeshara",
 		},
 	],
 };

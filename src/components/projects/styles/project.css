@@ -45,6 +45,8 @@
 
 .project-description {
 	color: var(--secondary-color);
+	font-size: 12px;
+	line-height: 1.5;
 }
 
 .project-link {

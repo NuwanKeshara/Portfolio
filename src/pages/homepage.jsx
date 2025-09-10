@@ -1,14 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
 
-import { faMailBulk } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-	faTwitter,
-	faGithub,
-	faStackOverflow,
-	faInstagram,
-} from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedin, faMedium } from "@fortawesome/free-brands-svg-icons";
 
 import Logo from "../components/common/logo";
 import Footer from "../components/common/footer";
@@ -113,17 +108,8 @@ const Homepage = () => {
 							</div>
 						</div>
 
+
 						<div className="homepage-socials">
-							<a
-								href={INFO.socials.twitter}
-								target="_blank"
-								rel="noreferrer"
-							>
-								<FontAwesomeIcon
-									icon={faTwitter}
-									className="homepage-social-icon"
-								/>
-							</a>
 							<a
 								href={INFO.socials.github}
 								target="_blank"
@@ -135,22 +121,22 @@ const Homepage = () => {
 								/>
 							</a>
 							<a
-								href={INFO.socials.stackoverflow}
+								href={INFO.socials.linkedin}
 								target="_blank"
 								rel="noreferrer"
 							>
 								<FontAwesomeIcon
-									icon={faStackOverflow}
+									icon={faLinkedin}
 									className="homepage-social-icon"
 								/>
 							</a>
 							<a
-								href={INFO.socials.instagram}
+								href={INFO.socials.medium}
 								target="_blank"
 								rel="noreferrer"
 							>
 								<FontAwesomeIcon
-									icon={faInstagram}
+									icon={faMedium}
 									className="homepage-social-icon"
 								/>
 							</a>
@@ -160,10 +146,14 @@ const Homepage = () => {
 								rel="noreferrer"
 							>
 								<FontAwesomeIcon
-									icon={faMailBulk}
+									icon={faEnvelope}
 									className="homepage-social-icon"
 								/>
 							</a>
+						</div>
+
+						<div className="homepage-works">
+							<Works />
 						</div>
 
 						<div className="homepage-projects">
@@ -172,24 +162,47 @@ const Homepage = () => {
 
 						<div className="homepage-after-title">
 							<div className="homepage-articles">
-								{myArticles.map((article, index) => (
-									<div
-										className="homepage-article"
-										key={(index + 1).toString()}
-									>
-										<Article
+								{myArticles.map((article, index) => {
+									const art = article();
+									const link = art.link || "";
+									const external = link.startsWith("http");
+									if (index === 0) {
+										return (
+											<div className="homepage-article" key={(index + 1).toString()}>
+												<div className="homepage-article-content homepage-article-content-with-image">
+													<div className="homepage-article-content-text">
+														<Article
+															key={(index + 1).toString()}
+															date={art.date}
+															title={art.title}
+															description={art.description}
+															link={link}
+															external={external}
+														/>
+													</div>
+													<div className="homepage-article-image-wrapper">
+														<img src="/homepage.jpg" alt="article visual" className="homepage-article-image" />
+													</div>
+												</div>
+											</div>
+										);
+									}
+									return (
+										<div
+											className="homepage-article"
 											key={(index + 1).toString()}
-											date={article().date}
-											title={article().title}
-											description={article().description}
-											link={"/article/" + (index + 1)}
-										/>
-									</div>
-								))}
-							</div>
-
-							<div className="homepage-works">
-								<Works />
+										>
+											<Article
+												key={(index + 1).toString()}
+												date={art.date}
+												title={art.title}
+												description={art.description}
+												link={link}
+												external={external}
+											/>
+										</div>
+									);
+								})}
 							</div>
 						</div>
 
