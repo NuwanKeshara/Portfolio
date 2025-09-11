@@ -25,16 +25,16 @@ const INFO = {
 	},
 
 	articles: {
-		title: "Driven by curiosity and a love for data engineering, I explore data while inspiring others through knowledge sharing and continuous learning.",
+		title: "Driven by curiosity and love for data engineering, I explore data while inspiring others through knowledge sharing and continuous learning.",
 		description:
-			"A collection of my articles and blogs where I share insights, best practices, and lessons learned in data engineering, big data systems, and modern cloud platforms.",
+			"A collection of my articles and blogs where I share insights, best practices and lessons learned in data engineering, big data systems and modern cloud platforms.",
 	},
 
 	projects: [
 		{
 			title: "IOT Real-time processing with Azure Databricks",
 			description:
-				"This project focuses on building a data pipeline to ingest and process IoT weather data and store the data in an Azure Databricks data lakehouse using Delta Lake and the Medallion Architecture. Finally Power BI will be used to visualize the data for analysis.",
+				"This project builds a real-time IoT data pipeline on Azure Databricks, ingesting weather sensor data via IoT Hub to Event Hub and storing it using the Medallion Architecture (Bronze/Silver/Gold) in Delta Lake. It includes streaming transformations, aggregation and cleansed data storage, with visualization in Power BI and CI versioning via Git and Azure DevOps.",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
 			linkText: "View Project",
 			link: "https://github.com/NuwanKeshara/IOT-Real-time-processing-with-Azure-Databricks",
@@ -42,7 +42,7 @@ const INFO = {
 		{
 			title: "Snowflake Data Vault 2.0",
 			description:
-				"This project focused on redesign and implementation of scalable data warehouse solution utilizing the Data Vault 2.0 methodology within the Snowflake cloud data platform.",
+				"This project implements a scalable Data Vault 2.0 architecture on Snowflake, using the snowflake_sample_data.tpch_sf10 schema with millions of records across Customer, Orders, Region and Nation tables. It builds stages: Staging, Raw DV, Business DV and delivers a star schema dimensional model for analytics. Key components include SnowPipe, Streams and Tasks for near-real-time ingestion and transformation.",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
 			linkText: "View Project",
 			link: "https://github.com/NuwanKeshara/Snowflake_Data_Vault_2.0",
@@ -66,7 +66,7 @@ const INFO = {
 		{
 			title: "Bank Marketing Analysis and Loan Prediction System using Clustering and Classification",
 			description:
-				"Comprehensive Marketing Insight: Developed a web application for in-depth analysis of a bank's marketing campaigns. The system efficiently processes campaign results and provides valuable insights into customer engagement. Risk Assessment: Designed a loan prediction system using classification techniques. This innovative approach assesses the risk associated with granting loans to customers, aiding decision-making and minimizing financial risk. Web Interface: Created a user-friendly web interface that facilitates seamless interaction with the system. Stakeholders can easily input customer data and receive real-time loan risk predictions, improving operational efficiency and accessibility. Advanced Data Techniques: Utilized clustering algorithms to group customers based on their attributes, enhancing segmentation accuracy. Applied classification algorithms to these clusters, generating accurate loan risk predictions and supporting the bank's risk management strategies.",
+				"This project delivers a bank marketing and loan prediction system, integrating clustering and classification for customer segmentation and risk assessment. Campaign data is processed to extract insights while a predictive model estimates loan approval risks. A web interface enables real-time customer data input, supporting data-driven marketing, efficient decision-making and improved risk management.",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
 			linkText: "View Project",
 			link: "https://github.com/NuwanKeshara",

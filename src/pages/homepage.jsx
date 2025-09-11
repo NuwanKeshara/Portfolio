@@ -65,12 +65,12 @@ const Homepage = () => {
 
 	// 🔹 Add different images for each article
 	const articleImages = [
-		"/homepage.jpg",
-		"/homepage.jpg",
-		"/images/article3.jpg",
-		"/images/article4.jpg",
-		"/images/article5.jpg",
-		"/images/article6.jpg",
+		"/spark.webp",
+		"/iot.jpg",
+		"/datavault.webp",
+		"/datawarehouse.webp",
+		"/scd.webp",
+		"/advancesql.webp",
 	];
 
 	return (
