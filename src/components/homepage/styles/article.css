@@ -1,3 +1,14 @@
+.homepage-article-flex .homepage-article-image-wrapper {
+	background: none !important;
+	border: none !important;
+	box-shadow: none !important;
+	padding: 0 !important;
+}
+.homepage-article-flex {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
 /* For article with image inside the frame */
 .homepage-article-content-with-image {
 	display: flex;
@@ -62,14 +73,17 @@
 	width: 90%;
 	mix-blend-mode: normal;
 	border-radius: 20px;
-	opacity: 0.8;
+	opacity: 1;
 }
 
-.homepage-article:hover {
-	background: #fafafa;
-	opacity: 1;
-	transition: background-color 0.3s ease-in-out;
+/* Make the second article (with homepage-article-fullwidth) span full width with equal margins */
+.homepage-article-fullwidth {
+	width: 100% !important;
+	margin-left: 0 !important;
+	margin-right: 0 !important;
 }
+
+
 
 .homepage-article-content {
 	padding: 30px;

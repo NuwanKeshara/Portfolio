@@ -166,40 +166,24 @@ const Homepage = () => {
 									const art = article();
 									const link = art.link || "";
 									const external = link.startsWith("http");
-									if (index === 0) {
-										return (
-											<div className="homepage-article" key={(index + 1).toString()}>
-												<div className="homepage-article-content homepage-article-content-with-image">
-													<div className="homepage-article-content-text">
-														<Article
-															key={(index + 1).toString()}
-															date={art.date}
-															title={art.title}
-															description={art.description}
-															link={link}
-															external={external}
-														/>
-													</div>
-													<div className="homepage-article-image-wrapper">
-														<img src="/homepage.jpg" alt="article visual" className="homepage-article-image" />
-													</div>
-												</div>
-											</div>
-										);
-									}
 									return (
 										<div
-											className="homepage-article"
+											className="homepage-article homepage-article-flex"
 											key={(index + 1).toString()}
 										>
-											<Article
-												key={(index + 1).toString()}
-												date={art.date}
-												title={art.title}
-												description={art.description}
-												link={link}
-												external={external}
-											/>
+											<div className="homepage-article-content-text" style={{ flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: 30 }}>
+												<Article
+													key={(index + 1).toString()}
+													date={art.date}
+													title={art.title}
+													description={art.description}
+													link={link}
+													external={external}
+												/>
+											</div>
+											<div className="homepage-article-image-wrapper" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: 30 }}>
+												<img src="/homepage.jpg" alt="article visual" className="homepage-article-image" style={{ height: 220, width: 'auto', maxWidth: 300, objectFit: 'cover', borderRadius: 16 }} />
+											</div>
 										</div>
 									);
 								})}
