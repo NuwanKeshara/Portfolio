@@ -63,6 +63,16 @@ const Homepage = () => {
 		boxShadow: stayLogo ? "0px 4px 10px rgba(0, 0, 0, 0.25)" : "none",
 	};
 
+	// 🔹 Add different images for each article
+	const articleImages = [
+		"/homepage.jpg",
+		"/homepage.jpg",
+		"/images/article3.jpg",
+		"/images/article4.jpg",
+		"/images/article5.jpg",
+		"/images/article6.jpg",
+	];
+
 	return (
 		<React.Fragment>
 			<Helmet>
@@ -107,7 +117,6 @@ const Homepage = () => {
 								</div>
 							</div>
 						</div>
-
 
 						<div className="homepage-socials">
 							<a
@@ -171,7 +180,16 @@ const Homepage = () => {
 											className="homepage-article homepage-article-flex"
 											key={(index + 1).toString()}
 										>
-											<div className="homepage-article-content-text" style={{ flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: 30 }}>
+											<div
+												className="homepage-article-content-text"
+												style={{
+													flex: 1,
+													display: "flex",
+													flexDirection: "column",
+													justifyContent: "center",
+													padding: 30,
+												}}
+											>
 												<Article
 													key={(index + 1).toString()}
 													date={art.date}
@@ -181,8 +199,27 @@ const Homepage = () => {
 													external={external}
 												/>
 											</div>
-											<div className="homepage-article-image-wrapper" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', marginRight: 30 }}>
-												<img src="/homepage.jpg" alt="article visual" className="homepage-article-image" style={{ height: 220, width: 'auto', maxWidth: 300, objectFit: 'cover', borderRadius: 16 }} />
+											<div
+												className="homepage-article-image-wrapper"
+												style={{
+													display: "flex",
+													alignItems: "center",
+													justifyContent: "center",
+													marginRight: 30,
+												}}
+											>
+												<img
+													src={articleImages[index]} // 🔹 Different image for each article
+													alt={`article visual ${index + 1}`}
+													className="homepage-article-image"
+													style={{
+														height: 220,
+														width: "auto",
+														maxWidth: 300,
+														objectFit: "cover",
+														borderRadius: 16,
+													}}
+												/>
 											</div>
 										</div>
 									);
