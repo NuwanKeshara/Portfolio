@@ -7,9 +7,9 @@ const INFO = {
 	},
 
 		socials: {
-			github: "https://github.com/NuwanKeshara",
 			linkedin: "https://www.linkedin.com/in/nuwan-keshara/",
 			medium: "https://medium.com/@nuwankeshara12",
+			github: "https://github.com/NuwanKeshara",
 		},
 
 	homepage: {

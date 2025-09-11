@@ -119,16 +119,7 @@ const Homepage = () => {
 						</div>
 
 						<div className="homepage-socials">
-							<a
-								href={INFO.socials.github}
-								target="_blank"
-								rel="noreferrer"
-							>
-								<FontAwesomeIcon
-									icon={faGithub}
-									className="homepage-social-icon"
-								/>
-							</a>
+							
 							<a
 								href={INFO.socials.linkedin}
 								target="_blank"
@@ -149,6 +140,18 @@ const Homepage = () => {
 									className="homepage-social-icon"
 								/>
 							</a>
+
+							<a
+								href={INFO.socials.github}
+								target="_blank"
+								rel="noreferrer"
+							>
+								<FontAwesomeIcon
+									icon={faGithub}
+									className="homepage-social-icon"
+								/>
+							</a>
+
 							<a
 								href={`mailto:${INFO.main.email}`}
 								target="_blank"
