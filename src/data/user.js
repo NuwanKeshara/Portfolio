@@ -2,18 +2,15 @@ const INFO = {
 	main: {
 		title: "Welcome",
 		name: "Nuwan Keshara",
-		email: "nuwankeshara12@gmail.com",
+		email: "nuwankyazh@gmail.com",
 		logo: "../logo.png",
 	},
 
-	socials: {
-		twitter: "https://twitter.com/",
-		github: "https://github.com/",
-		linkedin: "https://linkedin.com/",
-		instagram: "https://instagram.com/",
-		stackoverflow: "https://stackoverflow.com/",
-		facebook: "https://facebook.com/",
-	},
+		socials: {
+			linkedin: "https://www.linkedin.com/in/nuwan-keshara/",
+			medium: "https://medium.com/@nuwankeshara12",
+			github: "https://github.com/NuwanKeshara",
+		},
 
 	homepage: {
 		title: "Data Engineering | Big Data | Cloud",
@@ -28,55 +25,51 @@ const INFO = {
 	},
 
 	articles: {
-		title: "Driven by curiosity and a love for data engineering, I explore data while inspiring others through knowledge sharing and continuous learning.",
+		title: "Driven by curiosity and love for data engineering, I explore data while inspiring others through knowledge sharing and continuous learning.",
 		description:
-			"A collection of my articles and blogs where I share insights, best practices, and lessons learned in data engineering, big data systems, and modern cloud platforms.",
+			"A collection of my articles and blogs where I share insights, best practices and lessons learned in data engineering, big data systems and modern cloud platforms.",
 	},
 
 	projects: [
 		{
-			title: "Project 1",
+			title: "IOT Real-time processing with Azure Databricks",
 			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
-			linkText: "View Project",
-			link: "https://github.com",
-		},
-
-		{
-			title: "Project 2",
-			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
+				"This project builds a real-time IoT data pipeline on Azure Databricks, ingesting weather sensor data via IoT Hub to Event Hub and storing it using the Medallion Architecture (Bronze/Silver/Gold) in Delta Lake. It includes streaming transformations, aggregation and cleansed data storage, with visualization in Power BI and CI versioning via Git and Azure DevOps.",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
 			linkText: "View Project",
-			link: "https://github.com",
+			link: "https://github.com/NuwanKeshara/IOT-Real-time-processing-with-Azure-Databricks",
 		},
-
 		{
-			title: "Project 3",
+			title: "Snowflake Data Vault 2.0",
 			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/html/html.png",
+				"This project implements a scalable Data Vault 2.0 architecture on Snowflake, using the snowflake_sample_data.tpch_sf10 schema with millions of records across Customer, Orders, Region and Nation tables. It builds stages: Staging, Raw DV, Business DV and delivers a star schema dimensional model for analytics. Key components include SnowPipe, Streams and Tasks for near-real-time ingestion and transformation.",
+			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
 			linkText: "View Project",
-			link: "https://github.com",
+			link: "https://github.com/NuwanKeshara/Snowflake_Data_Vault_2.0",
 		},
-
 		{
-			title: "Project 4",
+			title: "Movie Ticket DataWarehouse",
 			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
+				"This project focuses on building a data warehouse and generating insightful reports from a dataset of customer movie theater bookings within the United States. Dataset is taken from Kaggle and it includes 2 CSV files. The objective is to build a datawarehouse from the ground up, enabling users to extract meaningful business intelligence through the comprehensive reports.",
+			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
 			linkText: "View Project",
-			link: "https://github.com",
+			link: "https://github.com/NuwanKeshara/MovieTicket-DataWarehouse",
 		},
-
 		{
-			title: "Project 5",
+			title: "SmartTemp: IOT Based Smart Temperature Predictor",
 			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
+				"IoT Based Temperature Prediction System: Designed and developed an IoT based system to monitor and predict ambient temperature, integrating sensors to collect real-time temperature data. Developed a motion based mechanism (gauge) to indicate temperature fluctuations to visualize current temperature readings. Time Series Forecasting: Utilized a time series algorithm to forecast temperature values for the next 30 days by leveraging historical seasonal temperature data to improve prediction accuracy.",
+			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
 			linkText: "View Project",
-			link: "https://github.com",
+			link: "https://github.com/NuwanKeshara",
+		},
+		{
+			title: "Bank Marketing Analysis and Loan Prediction System using Clustering and Classification",
+			description:
+				"This project delivers a bank marketing and loan prediction system, integrating clustering and classification for customer segmentation and risk assessment. Campaign data is processed to extract insights while a predictive model estimates loan approval risks. A web interface enables real-time customer data input, supporting data-driven marketing, efficient decision-making and improved risk management.",
+			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
+			linkText: "View Project",
+			link: "https://github.com/NuwanKeshara",
 		},
 	],
 };
