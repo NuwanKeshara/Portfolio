@@ -2,12 +2,6 @@
 	"name": "reactfolio",
 	"version": "1.1.0",
 	"description": "Personal portfolio built using Reactjs",
-	"author": {
-		"name": "Nuwan Keshara",
-		"email": "nuwankeshara12@gmail.com",
-		"url": "https://nuwankeshara.github.io/"
-	},
-	"license": "MIT",
 	"private": true,
 	"dependencies": {
 		"@fortawesome/fontawesome-svg-core": "^6.4.0",

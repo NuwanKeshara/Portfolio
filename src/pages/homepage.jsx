@@ -1,14 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
 
-import { faMailBulk } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-	faTwitter,
-	faGithub,
-	faStackOverflow,
-	faInstagram,
-} from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedin, faMedium } from "@fortawesome/free-brands-svg-icons";
 
 import Logo from "../components/common/logo";
 import Footer from "../components/common/footer";
@@ -68,6 +63,16 @@ const Homepage = () => {
 		boxShadow: stayLogo ? "0px 4px 10px rgba(0, 0, 0, 0.25)" : "none",
 	};
 
+	// 🔹 Add different images for each article
+	const articleImages = [
+		"spark.webp",
+		"iot.jpg",
+		"datavault.webp",
+		"datawarehouse.webp",
+		"scd.webp",
+		"advancesql.webp",
+	];
+
 	return (
 		<React.Fragment>
 			<Helmet>
@@ -114,16 +119,28 @@ const Homepage = () => {
 						</div>
 
 						<div className="homepage-socials">
+							
 							<a
-								href={INFO.socials.twitter}
+								href={INFO.socials.linkedin}
 								target="_blank"
 								rel="noreferrer"
 							>
 								<FontAwesomeIcon
-									icon={faTwitter}
+									icon={faLinkedin}
 									className="homepage-social-icon"
 								/>
 							</a>
+							<a
+								href={INFO.socials.medium}
+								target="_blank"
+								rel="noreferrer"
+							>
+								<FontAwesomeIcon
+									icon={faMedium}
+									className="homepage-social-icon"
+								/>
+							</a>
+
 							<a
 								href={INFO.socials.github}
 								target="_blank"
@@ -134,36 +151,21 @@ const Homepage = () => {
 									className="homepage-social-icon"
 								/>
 							</a>
-							<a
-								href={INFO.socials.stackoverflow}
-								target="_blank"
-								rel="noreferrer"
-							>
-								<FontAwesomeIcon
-									icon={faStackOverflow}
-									className="homepage-social-icon"
-								/>
-							</a>
-							<a
-								href={INFO.socials.instagram}
-								target="_blank"
-								rel="noreferrer"
-							>
-								<FontAwesomeIcon
-									icon={faInstagram}
-									className="homepage-social-icon"
-								/>
-							</a>
+
 							<a
 								href={`mailto:${INFO.main.email}`}
 								target="_blank"
 								rel="noreferrer"
 							>
 								<FontAwesomeIcon
-									icon={faMailBulk}
+									icon={faEnvelope}
 									className="homepage-social-icon"
 								/>
 							</a>
+						</div>
+
+						<div className="homepage-works">
+							<Works />
 						</div>
 
 						<div className="homepage-projects">
@@ -172,24 +174,59 @@ const Homepage = () => {
 
 						<div className="homepage-after-title">
 							<div className="homepage-articles">
-								{myArticles.map((article, index) => (
-									<div
-										className="homepage-article"
-										key={(index + 1).toString()}
-									>
-										<Article
+								{myArticles.map((article, index) => {
+									const art = article();
+									const link = art.link || "";
+									const external = link.startsWith("http");
+									return (
+										<div
+											className="homepage-article homepage-article-flex"
 											key={(index + 1).toString()}
-											date={article().date}
-											title={article().title}
-											description={article().description}
-											link={"/article/" + (index + 1)}
-										/>
-									</div>
-								))}
-							</div>
-
-							<div className="homepage-works">
-								<Works />
+										>
+											<div
+												className="homepage-article-content-text"
+												style={{
+													flex: 1,
+													display: "flex",
+													flexDirection: "column",
+													justifyContent: "center",
+													padding: 30,
+												}}
+											>
+												<Article
+													key={(index + 1).toString()}
+													date={art.date}
+													title={art.title}
+													description={art.description}
+													link={link}
+													external={external}
+												/>
+											</div>
+											<div
+												className="homepage-article-image-wrapper"
+												style={{
+													display: "flex",
+													alignItems: "center",
+													justifyContent: "center",
+													marginRight: 30,
+												}}
+											>
+												<img
+													src={articleImages[index]} // 🔹 Different image for each article
+													alt={`article visual ${index + 1}`}
+													className="homepage-article-image"
+													style={{
+														height: 220,
+														width: "auto",
+														maxWidth: 300,
+														objectFit: "cover",
+														borderRadius: 16,
+													}}
+												/>
+											</div>
+										</div>
+									);
+								})}
 							</div>
 						</div>
 

@@ -33,7 +33,7 @@ const ReadArticle = () => {
 			<Helmet>
 				<title>{`${article().title} | ${INFO.main.title}`}</title>
 				<meta name="description" content={article().description} />
-				<meta name="keywords" content={article().keywords.join(", ")} />
+				{/* <meta name="keywords" content={article().keywords.join(", ")} /> */}
 			</Helmet>
 
 			<div className="page-content">

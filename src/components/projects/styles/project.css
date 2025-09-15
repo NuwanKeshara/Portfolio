@@ -3,7 +3,7 @@
 .project {
 	mix-blend-mode: normal;
 	border-radius: 20px;
-	opacity: 0.8;
+	opacity: 1;
 	height: 100%;
 }
 
@@ -11,11 +11,7 @@
 	text-decoration: none;
 }
 
-.project:hover {
-	background: #fafafa;
-	opacity: 1;
-	transition: background-color 0.3s ease-in-out;
-}
+
 
 .project:hover .project-link {
 	color: var(--link-color);
@@ -45,6 +41,8 @@
 
 .project-description {
 	color: var(--secondary-color);
+	font-size: 12px;
+	line-height: 1.5;
 }
 
 .project-link {
